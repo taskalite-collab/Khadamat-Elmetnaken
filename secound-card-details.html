@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تفاصيل خدمة البرمجة</title>
+<link rel="stylesheet" href="./styles/fcd-style.css">
+</head>
+<body>
+    <!-- Payment Success Popup -->
+<div class="payment-success" id="paymentBox">
+    <div class="checkmark-wrapper">
+        <svg class="checkmark" viewBox="0 0 52 52">
+            <circle class="checkmark-circle"
+                cx="26" cy="26" r="25"
+                fill="none"/>
+            <path class="checkmark-check"
+                fill="none"
+                d="M14 27l7 7 16-16"/>
+        </svg>
+    </div>
+    <h2>تم الدفع بنجاح</h2>
+</div>
+<script>
+function showPayment(e){
+    e.preventDefault();
+    const box = document.getElementById("paymentBox");
+
+    // يظهر بعد 1 ثانية
+    setTimeout(() => {
+        box.classList.add("active");
+    }, 500);
+
+    // يختفي بعد 4 ثواني
+    setTimeout(() => {
+        box.classList.remove("active");
+    }, 2000);
+
+    // يرجع للصفحة الرئيسية بعد 4.5 ثانية
+    setTimeout(() => {
+        window.location.href = "Marketing.html"; 
+        // غير اسم الصفحة لو عندك اسم مختلف
+    }, 2500);
+}
+</script>
+
+<div class="container">
+
+    <h1 class="title">تفاصيل خدمة النيك</h1>
+
+    <div class="service-card">
+
+        <h2 class="service-name">نيك بأحدث الطرق و الوضعيات</h2>
+        <hr class="hr">
+
+        <p class="service-desc">   
+            خدمة النيك هي أكثر خدمة مميزة لدينا حيث تسمح لك بأن تنيك و انت في بيتك زي الباشا
+        </p>
+
+        <ul class="features">
+            <li>نيك بأحدث الطرق </li>
+            <li>إبتلاع اللبن بعد النيك</li>
+            <li>غسل و شطف زبك من أي بقايا لبن بعد النيك</li>
+            <li>حماية سرك وحفظة (محدش هيعرف حاجة)</li>
+        </ul>
+
+        <div class="price-box">
+            السعر: <span>1500 جنيه</span>
+        </div>
+
+        <a href="#" class="card-btn" onclick="showPayment(event)">
+  ادفع الآن
+</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
