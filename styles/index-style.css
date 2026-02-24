@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     background-color: #1e1e20;
     border-radius: 15px;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .card:hover {
     transform: translate(0,-10px);
