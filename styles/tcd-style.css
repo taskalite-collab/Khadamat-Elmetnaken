@@ -209,3 +209,7 @@ body {
 @keyframes drawCheck {
     to { stroke-dashoffset: 0; }
 }
+@media (max-width: 600px ) {
+  body {
+    min-height: 110vh;
+  }
