@@ -273,3 +273,7 @@ body {
       background-position: 0;
     }
 }
+@media (max-width: 600px ) {
+  body {
+    min-height: 110vh;
+  }
