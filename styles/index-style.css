@@ -15,6 +15,7 @@ body {
     background-color: #000000ca;
     position: relative;
 }
+
 .title {
     position: absolute;
     top: 20px;
@@ -38,9 +39,12 @@ body {
     box-shadow: rgba(255, 0, 0, 0.623) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(3, 129, 255, 0.441) 0px -2px 6px 0px inset;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     background-color: #1e1e20;
     border-radius: 15px;
+    position: relative;
+    padding: 10px;
     transition: all 0.5s;
 }
 .card:hover {
@@ -147,4 +151,76 @@ body {
     margin-top: 10px;
     width: 15%;
     background-color: #f0f0f0;
+}
+/* From Uiverse.io by neerajbaniwal */ 
+.btn-shine {
+  position: absolute;
+  bottom: 5px;
+  right: -30px;
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@media (max-width: 600px ) {
+  body {
+    min-height: 250vh;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
 }
