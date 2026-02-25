@@ -216,7 +216,7 @@ body {
     background-position: 180px;
   }
 }
-@media (max-width: 600px ) {
+@media (max-width: 900px ) {
   body {
     min-height: 250vh;
   }
